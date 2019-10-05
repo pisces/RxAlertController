@@ -2,9 +2,9 @@
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![Build Status](https://travis-ci.org/pisces/RxAlertController.svg?branch=master)](https://travis-ci.org/pisces/RxAlertController)
-[![Version](https://img.shields.io/cocoapods/v/RxAlertController.svg?style=flat)](http://cocoapods.org/pods/RxAlertController-Swift)
-[![License](https://img.shields.io/cocoapods/l/RxAlertController.svg?style=flat)](http://cocoapods.org/pods/RxAlertController-Swift)
-[![Platform](https://img.shields.io/cocoapods/p/RxAlertController.svg?style=flat)](http://cocoapods.org/pods/RxAlertController-Swift)
+[![Version](https://img.shields.io/cocoapods/v/RxAlertController-Swift.svg?style=flat)](http://cocoapods.org/pods/RxAlertController-Swift)
+[![License](https://img.shields.io/cocoapods/l/RxAlertController-Swift.svg?style=flat)](http://cocoapods.org/pods/RxAlertController-Swift)
+[![Platform](https://img.shields.io/cocoapods/p/RxAlertController-Swift.svg?style=flat)](http://cocoapods.org/pods/RxAlertController-Swift)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 - Library for Reactive programming of UIAlertController.
