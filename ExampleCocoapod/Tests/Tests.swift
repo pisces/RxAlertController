@@ -1,5 +1,5 @@
 import XCTest
-import RxAlertController
+import RxAlertController_Swift
 
 class Tests: XCTestCase {
     

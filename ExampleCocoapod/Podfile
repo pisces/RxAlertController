@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'RxAlertController_Example' do
-  pod 'RxAlertController', :path => '../'
+  pod 'RxAlertController-Swift', :path => '../'
 
   target 'RxAlertController_Tests' do
     inherit! :search_paths
