@@ -44,6 +44,7 @@ RxAlertController(title: "title", message: "message", preferredStyle: .alert)
 ```
 
 ### Presenting with textfields
+```swift
 RxAlertController(title: "title", message: "message", preferredStyle: .alert)
     .add(.init(title: "cancel", style: .cancel))
     .add(.init(title: "ok", id: 1, style: .default))
