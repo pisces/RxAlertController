@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RxAlertController'
+  s.name             = 'RxAlertController-Swift'
   s.version          = '1.0.0'
   s.summary          = 'Library for Reactive programming of UIAlertController.'
   s.description      = 'Library for Reactive programming of UIAlertController.'
