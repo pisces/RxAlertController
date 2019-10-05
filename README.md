@@ -15,6 +15,15 @@
 
 ## Using
 
+### Import
+```swift
+// cocoapods
+import RxAlertController_Swift
+
+// carthage
+import RxAlertController
+```
+
 ### Simple presenting
 ```swift
 RxAlertController(title: "title", message: "message", preferredStyle: .alert)
@@ -74,7 +83,7 @@ RxAlertController is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'RxAlertController', '~> 1.0.0'
+pod 'RxAlertController-Swift', '~> 1.0.0'
 ```
 
 ### Carthage

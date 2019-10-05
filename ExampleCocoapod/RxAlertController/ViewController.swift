@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-import RxAlertController
+import RxAlertController_Swift
 
 class ViewController: UIViewController {
     
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
                 $0.placeholder = "textfield 1"
             }
             .addTextField {
-                $0.placeholder = "textfield 1"
+                $0.placeholder = "textfield 2"
             }
             .show(in: self)
             .subscribe(onNext: {
