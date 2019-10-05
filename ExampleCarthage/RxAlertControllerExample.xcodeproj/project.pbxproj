@@ -7,12 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6FD2A7198571EA15F7C153 /* RxSwift.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = AD7A9AB9645510B50DDFE205 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21952DFABD9D577CAC362AE7 /* RxCocoa.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = AB98E6E4587F1B083064B0D0 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23DDD88F2348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		23DDD8912348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		23DDD8932348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		23DDD8952348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		23DDD8972348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		23DDD8992348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		23DDD89B2348BE9100FEF671 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		23FECA2723489E5100049161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FECA2623489E5100049161 /* AppDelegate.swift */; };
 		23FECA2923489E5100049161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FECA2823489E5100049161 /* ViewController.swift */; };
 		23FECA2C23489E5100049161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FECA2A23489E5100049161 /* Main.storyboard */; };
 		23FECA2E23489E5200049161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FECA2D23489E5200049161 /* Assets.xcassets */; };
 		23FECA3123489E5200049161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FECA2F23489E5200049161 /* LaunchScreen.storyboard */; };
+		7507D642B7D21EF1242159A7 /* RxAtomic.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = AAA97507732DB911C70B1F31 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0C6C779945CA155C1251092 /* RxBlocking.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 96D58AA40E138B04A8F8222D /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD0885383E9786275A167EDA /* RxTest.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 6562D5138AA4C2FE0FDB59C6 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E923A837E8C6B58392299A2F /* RxAlertController.framework in Embed Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 7208229EA4C5937EB54D92D2 /* RxAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6D83A62D168B5675FED3E66 /* Embed Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E923A837E8C6B58392299A2F /* RxAlertController.framework in Embed Carthage Frameworks */,
+				DD0885383E9786275A167EDA /* RxTest.framework in Embed Carthage Frameworks */,
+				7507D642B7D21EF1242159A7 /* RxAtomic.framework in Embed Carthage Frameworks */,
+				21952DFABD9D577CAC362AE7 /* RxCocoa.framework in Embed Carthage Frameworks */,
+				1D6FD2A7198571EA15F7C153 /* RxSwift.framework in Embed Carthage Frameworks */,
+				C0C6C779945CA155C1251092 /* RxBlocking.framework in Embed Carthage Frameworks */,
+			);
+			name = "Embed Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23FECA2323489E5100049161 /* RxAlertControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxAlertControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +54,13 @@
 		23FECA2D23489E5200049161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23FECA3023489E5200049161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23FECA3223489E5200049161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A3BDF71F4F05DE0C9CDDBA2 /* RxAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlertController.framework; path = Carthage/Build/iOS/RxAlertController.framework; sourceTree = "<group>"; };
+		6562D5138AA4C2FE0FDB59C6 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		7208229EA4C5937EB54D92D2 /* RxAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlertController.framework; path = Carthage/Build/iOS/RxAlertController.framework; sourceTree = "<group>"; };
+		96D58AA40E138B04A8F8222D /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		AAA97507732DB911C70B1F31 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		AB98E6E4587F1B083064B0D0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		AD7A9AB9645510B50DDFE205 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +68,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DDD89B2348BE9100FEF671 /* BuildFile in Frameworks */,
+				23DDD88F2348BE9100FEF671 /* BuildFile in Frameworks */,
+				23DDD8952348BE9100FEF671 /* BuildFile in Frameworks */,
+				23DDD8992348BE9100FEF671 /* BuildFile in Frameworks */,
+				23DDD8912348BE9100FEF671 /* BuildFile in Frameworks */,
+				23DDD8972348BE9100FEF671 /* BuildFile in Frameworks */,
+				23DDD8932348BE9100FEF671 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +86,7 @@
 			children = (
 				23FECA2523489E5100049161 /* RxAlertControllerExample */,
 				23FECA2423489E5100049161 /* Products */,
+				23FECA382348BA5D00049161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +111,19 @@
 			path = RxAlertControllerExample;
 			sourceTree = "<group>";
 		};
+		23FECA382348BA5D00049161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7208229EA4C5937EB54D92D2 /* RxAlertController.framework */,
+				6562D5138AA4C2FE0FDB59C6 /* RxTest.framework */,
+				AAA97507732DB911C70B1F31 /* RxAtomic.framework */,
+				AB98E6E4587F1B083064B0D0 /* RxCocoa.framework */,
+				AD7A9AB9645510B50DDFE205 /* RxSwift.framework */,
+				96D58AA40E138B04A8F8222D /* RxBlocking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +134,8 @@
 				23FECA1F23489E5100049161 /* Sources */,
 				23FECA2023489E5100049161 /* Frameworks */,
 				23FECA2123489E5100049161 /* Resources */,
+				F6D83A62D168B5675FED3E66 /* Embed Carthage Frameworks */,
+				1F3FD7AFFC749F9C42F860AB /* Remove Unwanted Framework Architectures */,
 			);
 			buildRules = (
 			);
@@ -129,6 +191,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F3FD7AFFC749F9C42F860AB /* Remove Unwanted Framework Architectures */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove Unwanted Framework Architectures";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n  # This script loops through the frameworks embedded in the application and\n  # removes unused architectures.\n  find \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\n  do\n  FRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\n  FRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n  echo \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\n  EXTRACTED_ARCHS=()\n\n  for ARCH in $ARCHS\n  do\n  echo \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\n  lipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\n  EXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\n  done\n\n  echo \"Merging extracted architectures: ${ARCHS}\"\n  lipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\n  rm \"${EXTRACTED_ARCHS[@]}\"\n\n  echo \"Replacing original executable with thinned version\"\n  rm \"$FRAMEWORK_EXECUTABLE_PATH\"\n  mv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\n  done\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23FECA1F23489E5100049161 /* Sources */ = {
@@ -283,6 +366,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxAlertControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +387,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxAlertControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

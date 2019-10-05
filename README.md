@@ -52,7 +52,7 @@ RxAlertController(title: "title", message: "message", preferredStyle: .alert)
         $0.placeholder = "textfield 1"
     }
     .addTextField {
-        $0.placeholder = "textfield 1"
+        $0.placeholder = "textfield 2"
     }
     .show(in: self)
     .subscribe(onNext: {
