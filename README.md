@@ -1,7 +1,7 @@
 # RxAlertController
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
-[![CI Status](http://img.shields.io/travis/pisces/RxAlertController.svg?style=flat)](https://travis-ci.org/pisces/RxAlertController)
+[![Build Status](https://travis-ci.org/pisces/RxAlertController.svg?branch=master)](https://travis-ci.org/pisces/RxAlertController)
 [![Version](https://img.shields.io/cocoapods/v/RxAlertController.svg?style=flat)](http://cocoapods.org/pods/RxAlertController)
 [![License](https://img.shields.io/cocoapods/l/RxAlertController.svg?style=flat)](http://cocoapods.org/pods/RxAlertController)
 [![Platform](https://img.shields.io/cocoapods/p/RxAlertController.svg?style=flat)](http://cocoapods.org/pods/RxAlertController)
