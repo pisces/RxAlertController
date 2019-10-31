@@ -14,11 +14,13 @@ public struct RxAlertAction {
     public let id: Int
     public let title: String
     public let style: UIAlertAction.Style
+    public let userInfo: [String: Any]?
     
-    public init(title: String, id: Int = EmptyId, style: UIAlertAction.Style = .default) {
+    public init(title: String, id: Int = EmptyId, style: UIAlertAction.Style = .default, userInfo: [String: Any]? = nil) {
         self.title = title
         self.id = id
         self.style = style
+        self.userInfo = userInfo
     }
     
     public struct Result {
@@ -31,13 +33,11 @@ public struct RxAlertModel {
     public let title: String?
     public let message: String?
     public let style: UIAlertController.Style
-    public let userInfo: [String: Any]?
     
-    public init(title: String? = nil, message: String? = nil, style: UIAlertController.Style = .alert, userInfo: [String: Any]? = nil) {
+    public init(title: String? = nil, message: String? = nil, style: UIAlertController.Style = .alert) {
         self.title = title
         self.message = message
         self.style = style
-        self.userInfo = userInfo
     }
 }
 
@@ -63,14 +63,19 @@ public class RxAlertController {
     // MARK: - Public Methods
     
     public func add(_ action: RxAlertAction) -> Self {
-        vc.addAction(.init(title: action.title, style: action.style) { _ in
+        let item = UIAlertAction(title: action.title, style: action.style) { _ in
             if action.id != RxAlertAction.EmptyId {
                 self.observer?.onNext(.init(action: action, textFields: self.vc.textFields))
                 self.observer?.onCompleted()
             }
-            
             self.observer = nil
-        })
+        }
+        
+        action.userInfo?.forEach {
+            item.setValue($0.value, forKey: $0.key)
+        }
+        
+        vc.addAction(item)
         return self
     }
     public func addTextField(configurationHandler: ((UITextField) -> Void)?) -> Self {
