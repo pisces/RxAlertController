@@ -24,7 +24,8 @@ class ViewController: UIViewController {
 //        testPresentingCompletion()
 //        testOnlyOkSubscribing()
 //        testAllSubscribing()
-        testWithTextFields()
+//        testWithTextFields()
+        testActionSheet()
     }
     
     func testSimplePresenting() {
@@ -73,6 +74,18 @@ class ViewController: UIViewController {
                 let text1 = $0.textFields?.first?.text ?? "nil"
                 let text2 = $0.textFields?.last?.text ?? "nil"
                 print("\($0.action.title) clicked -> text1: \(text1), text2: \(text2)")
+            }).disposed(by: disposeBag)
+    }
+    func testActionSheet() {
+        RxAlertController(title: "title", message: "message", preferredStyle: .actionSheet)
+            .add(.init(title: "cancel", style: .cancel))
+            .add(.init(title: "1", id: 1, style: .default, userInfo: ["checked": true]))
+            .add(.init(title: "2", id: 2, style: .default))
+            .add(.init(title: "3", id: 3, style: .default))
+            .add(.init(title: "4", id: 4, style: .default))
+            .show(in: self)
+            .subscribe(onNext: {
+                print("\($0.action.title) clicked: \($0.action.id)")
             }).disposed(by: disposeBag)
     }
 }
