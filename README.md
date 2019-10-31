@@ -71,6 +71,20 @@ RxAlertController(title: "title", message: "message", preferredStyle: .alert)
     }).disposed(by: disposeBag)
 ```
 
+### ActionSheet
+```swift
+RxAlertController(title: "title", message: "message", preferredStyle: .actionSheet)
+  .add(.init(title: "cancel", style: .cancel))
+  .add(.init(title: "1", id: 1, style: .default, userInfo: ["checked": true]))
+  .add(.init(title: "2", id: 2, style: .default))
+  .add(.init(title: "3", id: 3, style: .default))
+  .add(.init(title: "4", id: 4, style: .default))
+  .show(in: self)
+  .subscribe(onNext: {
+      print("\($0.action.title) clicked: \($0.action.id)")
+  }).disposed(by: disposeBag)
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
