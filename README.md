@@ -85,6 +85,29 @@ RxAlertController(title: "title", message: "message", preferredStyle: .actionShe
   }).disposed(by: disposeBag)
 ```
 
+### ActionSheet with multiple actions
+```swift
+let ids: [Int] = [1, 2, 3, 4]
+
+RxAlertController(title: "title", message: "message", preferredStyle: .actionSheet)
+  .add(.init(title: "cancel", style: .cancel))
+  .add(
+      ids.compactMap {
+          let title = "\($0)"
+          switch $0 {
+          case 1:
+              return RxAlertAction(title: title, id: $0, style: .default, userInfo: ["checked": true])
+          default:
+              return RxAlertAction(title: title, id: $0, style: .default)
+          }
+      }
+  )
+  .show(in: self)
+  .subscribe(onNext: {
+      print("\($0.action.title) clicked: \($0.action.id)")
+  }).disposed(by: disposeBag)
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -97,7 +120,7 @@ RxAlertController is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'RxAlertController-Swift', '~> 1.0.0'
+pod 'RxAlertController-Swift', '~> 1.1.0'
 ```
 
 ### Carthage
@@ -114,7 +137,7 @@ $ brew install carthage
 To integrate RxAlertController into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "pisces/RxAlertController" ~> 1.0.0
+github "pisces/RxAlertController" ~> 1.1.0
 ```
 
 Run `carthage update` to build the framework and drag the built `RxAlertController.framework` into your Xcode project.
