@@ -41,7 +41,7 @@ public struct RxAlertModel {
     }
 }
 
-public class RxAlertController {
+final public class RxAlertController {
     
     // MARK: - Public Properties
     
@@ -76,6 +76,14 @@ public class RxAlertController {
         }
         
         vc.addAction(item)
+        return self
+    }
+    public func add(_ actions: RxAlertAction ...) -> Self {
+        actions.forEach { _ = add($0) }
+        return self
+    }
+    public func add(_ actions: [RxAlertAction]) -> Self {
+        actions.forEach { _ = add($0) }
         return self
     }
     public func addTextField(configurationHandler: ((UITextField) -> Void)?) -> Self {

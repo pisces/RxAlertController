@@ -25,7 +25,8 @@ class ViewController: UIViewController {
 //        testOnlyOkSubscribing()
 //        testAllSubscribing()
 //        testWithTextFields()
-        testActionSheet()
+//        testActionSheet()
+        testActionSheetWithMultipleActions()
     }
     
     func testSimplePresenting() {
@@ -83,6 +84,27 @@ class ViewController: UIViewController {
             .add(.init(title: "2", id: 2, style: .default))
             .add(.init(title: "3", id: 3, style: .default))
             .add(.init(title: "4", id: 4, style: .default))
+            .show(in: self)
+            .subscribe(onNext: {
+                print("\($0.action.title) clicked: \($0.action.id)")
+            }).disposed(by: disposeBag)
+    }
+    func testActionSheetWithMultipleActions() {
+        let ids: [Int] = [1, 2, 3, 4]
+        
+        RxAlertController(title: "title", message: "message", preferredStyle: .actionSheet)
+            .add(.init(title: "cancel", style: .cancel))
+            .add(
+                ids.compactMap {
+                    let title = "\($0)"
+                    switch $0 {
+                    case 1:
+                        return RxAlertAction(title: title, id: $0, style: .default, userInfo: ["checked": true])
+                    default:
+                        return RxAlertAction(title: title, id: $0, style: .default)
+                    }
+                }
+            )
             .show(in: self)
             .subscribe(onNext: {
                 print("\($0.action.title) clicked: \($0.action.id)")
