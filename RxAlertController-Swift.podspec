@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxAlertController-Swift'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'Library for Reactive programming of UIAlertController.'
   s.description      = 'Library for Reactive programming of UIAlertController.'
   s.homepage         = 'https://github.com/pisces/RxAlertController'
@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/pisces/RxAlertController.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
   s.source_files = 'RxAlertController/Classes/**/*'
-  s.dependency 'RxSwift', '~> 5.0.1'
+  s.dependency 'RxSwift'
 end
