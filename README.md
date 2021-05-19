@@ -120,7 +120,7 @@ RxAlertController is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'RxAlertController-Swift', '~> 1.1.0'
+pod 'RxAlertController-Swift', '~> 1.1.1'
 ```
 
 ### Carthage
@@ -137,7 +137,7 @@ $ brew install carthage
 To integrate RxAlertController into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "pisces/RxAlertController" ~> 1.1.0
+github "pisces/RxAlertController" ~> 1.1.1
 ```
 
 Run `carthage update` to build the framework and drag the built `RxAlertController.framework` into your Xcode project.
